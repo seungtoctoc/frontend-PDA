@@ -55,6 +55,17 @@ header {
     flex-shrink: 0;
 }
 
+.hi-box {
+    height:50px;
+    width:160px;
+    background: #E6EEFF;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding:5px;
+}
+
 #hi {
     color: #000;
     font-family: Pretendard;
@@ -62,14 +73,36 @@ header {
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 36px */
-    display: flex;
-    padding: 12px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    background: #E6EEFF;
+    
+    position: relative;
+    white-space: pre;
 }
+
+#hi::before {
+    content: "👋 안녕하세요!";
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    color: black;
+    overflow: hidden;
+    border-right: 1px solid black;
+    animation: typing 4s steps(40) infinite;
+}
+
+@keyframes typing{
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 88%;
+    }
+    70% {
+        width: 88%;
+    }
+    100% {
+        width: 0%;
+    }
+  }
 
 #introducing {
     color: #333;
@@ -79,6 +112,7 @@ header {
     font-weight: 600;
     line-height: 125%; /* 80px */
     letter-spacing: -1.28px;
+    white-space: nowrap;
 }
 
 #special-font {
