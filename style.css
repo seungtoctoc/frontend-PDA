@@ -174,8 +174,27 @@ header {
 .about-me img {
     width: 50px;
     height: 50px;
-    
     position: absolute;
     top: 150px;
     right: 900px;
+}
+
+button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    color: rgba(64, 57, 48, 0.80);
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 165px;
+    height: 88px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: 10px solid #BBD5F7;
+    background: linear-gradient(98deg, #BED3FF -10.83%, #D2F3E5 51.79%, #FFEBD9 110.76%);
 }
