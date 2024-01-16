@@ -84,7 +84,7 @@ header {
     gap: 16px;
 }
 
-.link-box div {
+.link-box a {
     display: flex;
     width: 270px;
     padding: 24px 40px;
