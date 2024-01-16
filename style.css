@@ -1,0 +1,136 @@
+body {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav {
+    display: flex;
+    width: 1366px;
+    padding-left: 50px;
+    align-items: center;
+    gap: 40px;
+    height: 100px;
+}
+
+header {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.nav-item {
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+}
+
+.left-box {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex-shrink: 0;
+}
+
+#hi {
+    color: #000;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #E6EEFF;
+}
+
+#introducing {
+    color: #333;
+    font-family: Pretendard;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 80px */
+    letter-spacing: -1.28px;
+}
+
+#special-font {
+    background: linear-gradient(99deg, #001F8F 3.58%, rgba(36, 255, 203, 0.50) 90.34%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Pretendard;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: -1.28px;
+}
+
+.link-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.link-box div {
+    display: flex;
+    width: 270px;
+    padding: 24px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#link1 {
+    border-radius: 16px;
+    background: #000;
+    height:24px;
+
+    color: #E6EEFF;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+}
+
+#link2 {
+    border-radius: 16px;
+    border: 4px solid #403930;
+    height:16px;
+
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+}
+
+
+.right-box {
+    flex: 1;
+    gap: 10px;
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 500px;
+    border: 10px solid #BCF2F9;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;    
+}
