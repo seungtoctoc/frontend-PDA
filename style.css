@@ -40,6 +40,19 @@ header {
     gap: 10px;
 }
 
+header div .left .text em {
+    background: linear-gradient(99deg, #001F8F 3.58%, rgba(36, 255, 203, 0.50) 90.34%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Pretendard;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: -1.28px;
+}
+
 header div {
     display: flex;
     gap:20px;
@@ -147,7 +160,7 @@ header div .left .link #link2 {
     line-height: 150%; /* 36px */
 }
 
-section {
+.introduce {
     background: linear-gradient(96deg, rgba(189, 210, 255, 0.40) 1.72%, rgba(116, 224, 215, 0.40) 158.93%);
     display: flex;
     height: 497px;
@@ -159,7 +172,7 @@ section {
 
 }
 
-section div {
+.introduce div {
     display: flex;
     width: 40%;
     margin: 0 auto;
@@ -173,7 +186,7 @@ section div {
     min-width: 500px;
 }
 
-section div p em {
+#t1 {
     color: #000;
     font-family: Pretendard;
     font-size: 40px;
@@ -183,7 +196,7 @@ section div p em {
     letter-spacing: -0.8px;
 }
 
-section div p {
+#t2 {
     flex-shrink: 0;
     align-self: stretch;
 
@@ -218,7 +231,7 @@ button {
     background: linear-gradient(98deg, #BED3FF -10.83%, #D2F3E5 51.79%, #FFEBD9 110.76%);
 }
 
-section div img {
+.introduce div img {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -226,12 +239,25 @@ section div img {
     left: 330px;
 }
 
-
 button p #email {
     font-size: 14px;
 }
 
+.stack .text {
+    margin: 100px;
+    text-align: center;
+}
+
+.stack .text #t2 {
+    color: darkgrey;
+}
+
+
 @media (max-width: 1080px) {
+    nav div p {
+        text-transform: uppercase;
+    }
+
     header {
         margin: 50px auto;
         height: 1100px;
@@ -251,8 +277,12 @@ button p #email {
         margin-top: 50px;
     }
 
-    section div {
+    .introduce div {
         width: 1 0 100%;
+    }
+
+    header div .text {
+        text-align: center;
     }
 
     header div .left .link {
