@@ -53,24 +53,6 @@ header div .left {
     flex-direction: column;
 }
 
-@media (max-width: 1080px) {
-    header {
-        height: 1000px;
-    }
-
-    header div {
-        flex-direction: column;
-    }
-
-    header div .left {
-        width: 1 0 100%;
-    }
-
-    header div .right {
-        width: 1 0 100%;
-    }
-}
-
 header div .left .hi {
     display: flex;
     padding: 12px 24px;
@@ -177,17 +159,20 @@ section {
     align-items: center;
     gap: 10px;
 
-    position: relative;
+
 }
 
 section div {
     display: flex;
-    width: 1120px;
+    width: 60%;
+    margin: 0 auto;
+
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
     flex-shrink: 0;
+
+    position: relative;
 }
 
 section div p em {
@@ -235,15 +220,38 @@ button {
     background: linear-gradient(98deg, #BED3FF -10.83%, #D2F3E5 51.79%, #FFEBD9 110.76%);
 }
 
-section img {
+section div img {
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 220px;
-    right: 900px;
+    top: 20px;
+    left: 330px;
 }
 
 
 button p #email {
     font-size: 14px;
+}
+
+@media (max-width: 1080px) {
+    header {
+        height: 1000px;
+    }
+
+    header div {
+        flex-direction: column;
+    }
+
+    header div .left {
+        width: 1 0 100%;
+    }
+
+    header div .right {
+        width: 1 0 100%;
+    }
+
+    section div {
+        width: 1 0 100%;
+
+    }
 }
