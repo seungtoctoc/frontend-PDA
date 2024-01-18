@@ -209,13 +209,17 @@ header div .left .link #link2 {
 }
 
 button {
-    display: flex;
-    justify-content: center;
-
     position: fixed;
     bottom: 0;
     right: 0;
-    margin: 20px;
+    margin: 30px;
+
+    border-radius: 50px;
+    border: 10px solid #BBD5F7;
+    background: linear-gradient(98deg, #BED3FF -10.83%, #D2F3E5 51.79%, #FFEBD9 110.76%);
+}
+
+button p {
     color: rgba(64, 57, 48, 0.80);
     text-align: center;
     font-family: Pretendard;
@@ -223,12 +227,6 @@ button {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 200px;
-    height: 88px;
-    flex-shrink: 0;
-    border-radius: 50px;
-    border: 10px solid #BBD5F7;
-    background: linear-gradient(98deg, #BED3FF -10.83%, #D2F3E5 51.79%, #FFEBD9 110.76%);
 }
 
 .introduce div img {
@@ -302,6 +300,7 @@ button p #email {
 
 .project .cards .card .right img{
     width : 400px;
+    padding-right: 30px;
 }
 
 
