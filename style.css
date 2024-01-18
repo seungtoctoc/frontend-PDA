@@ -1,6 +1,6 @@
-/* body * {
+body * {
     border: 1px solid black;
-} */
+}
 
 nav {
     display: flex;
@@ -243,8 +243,12 @@ button p #email {
     font-size: 14px;
 }
 
+.stack {
+    padding-bottom: 100px;
+}
+
 .stack .text {
-    margin: 100px;
+    margin: 50px 0 20px 0;
     text-align: center;
 }
 
@@ -252,6 +256,78 @@ button p #email {
     color: darkgrey;
 }
 
+.stack .images {
+    width: 900px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.stack .images img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.project .text {
+    width:800px;
+    margin : 0 auto;
+}
+
+.project .cards {
+    display: flex;
+    
+}
+
+.project .cards .card {
+    width : 800px;
+    margin: 20px auto;
+    display: flex;
+
+    border-radius: 24px;
+    background: #E6EEFF;
+}
+
+.project .cards .card .left {
+    width : 400px;
+    padding: 30px;
+} 
+
+.project .cards .card .left .link a {
+    margin-right: 20px;
+}
+
+.project .cards .card .right {
+    margin : auto 0;
+}
+
+.project .cards .card .right img{
+    width : 400px;
+}
+
+
+#t3 {
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+}
+
+#t4 {
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+}
+
+.project .cards {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
 
 @media (max-width: 1080px) {
     nav div p {
@@ -290,5 +366,33 @@ button p #email {
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
+    }
+
+    .stack .images {
+        width: 430px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .stack .images img {
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+    }
+
+    .project .cards .card .right {
+        display: none;
+    }
+
+    .project .cards .card .left {
+        margin: 0 auto;
+    }
+
+    .project .cards .card {
+        width: 600px;
+    }
+
+    .project .text {
+        width: 600px;
     }
 }
